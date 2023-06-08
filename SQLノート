@@ -43,3 +43,30 @@ NOT　条件式　条件式の結果を逆転させる
 
 論理演算子の優先度
 NOT > AND > OR
+
+DISTINCT　検索結果で重複している行があれば、それを取り除く
+SELECT DISTINCT 列名
+FROM テーブル名
+
+ORDER BY　　指定した列の値を基準として並び替える
+SELECT 列名 FROM テーブル名
+ORDER BY 列名　並び順(ASC or DESC 省略時はASC)
+
+OFFSET - FETCH句
+OFFSET 先頭から除外する行数 ROWS
+FETCH NEXT 取得行数 ROWS ONLY
+
+UNION 和集合 二つの文をつないで、それぞれの検索結果を足し合わせる。
+SELECT 文１
+UNION (ALL)　ALLをつけると重複行をまとめずにすべて返す
+SELECT 文２
+
+EXCEPT 差集合　
+SELECT 文１
+EXCEPT (ALL)
+SELECT 文２
+
+INTERSECT 積集合
+SELECT 文１
+INTERSECT (ALL)
+SELECT　文２
