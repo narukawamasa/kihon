@@ -128,3 +128,23 @@ FROM　テーブル名
 [HAVING  集計結果に対する条件式]
 [ORDER BY 並び替え列名]
 
+SELECT 選択列リスト
+FROM テーブルA
+JOIN テーブルB
+ON 両テーブルの結合条件
+
+左外部結合
+SECLET ~ FROM 表１
+LEFT JOIN 表２
+ON　結合条件
+
+右外部結合：右表の全行を必ず出力する
+SELECT ~ FROM 左表
+RIGHN JOIN 右表
+ON
+
+完全外部結合 : 左右の表の全行を必ず出力
+SELECT ~ FROM 左表
+FULL JOIN 右表
+ON
+
